@@ -1,0 +1,203 @@
+
+ 
+.navbar ul { 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style-type: none;
+    background-color: hsl(273, 85%, 48%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    
+    
+}
+
+.navbar {
+    width: 100%; /* Fyll hela sidans bredd */
+    background-color: hsl(273, 85%, 48%);
+    
+}
+
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    
+
+}
+ 
+ 
+ 
+.navbar a:hover  {
+    background-color: hsl(0, 0%, 10%);
+}
+
+.navbar li {
+    flex: 1;
+    text-align: center;
+    
+    
+}
+
+/* img { 
+place-items: center;
+position: relative;
+width: 100%;
+height: auto;
+justify-content: center;
+display: flex;
+padding-left: 250px;
+background-color: rgb(255, 255, 255);
+align-items: center;
+
+}
+ */
+
+
+
+
+/* En container runt bilden för centrering */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centrerar horisontellt */
+    align-items: center; /* Centrerar vertikalt om containern har höjd */
+    padding: 20px; /* Lägg till padding om det behövs runt bilden */
+    background-color: rgb(255, 255, 255); /* Bakgrundsfärg för containern */
+}
+
+/* Bilden i containern */
+.image-container img {
+    width: 100%; /* Gör att bilden fyller containern */
+    max-width: 400px; /* Bilden blir max 400px bred */
+    height: auto; /* Bevarar bildens proportioner */
+}
+
+
+
+
+
+h1 {
+   text-align: center;
+    font-family: 'Lacquer', sans-serif; color: blueviolet;
+    
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(Font/Roboto/Roboto-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+p {
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem; /* Grundläggande textstorlek */
+    line-height: 1.6; /* Ökat radavstånd för bättre läsbarhet */
+    color: #333; /* En mörkgrå färg som är mildare än ren svart */
+    margin: 20px auto; /* Automatiskt centrerad med marginaler upp och ner */
+    padding: 10px 15px; /* Inre marginaler för lite utrymme runt texten */
+    max-width: 800px; /* Begränsad bredd för bättre läsbarhet på större skärmar */
+    background-color: #78058325; /* Ljus bakgrundsfärg för kontrast */
+    border-radius: 8px; /* Rundade hörn för mjukare intryck */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* En lätt skugga för ett svävande utseende */
+    text-align: justify; /* Justerar texten så att båda sidor är jämna */
+    
+    
+}
+
+h2 {
+    text-align: center;
+    /* font-family: 'roboto', sans-serif; */
+    font-family: 'Lacquer', sans-serif; color: blueviolet;
+    font-weight: 700; 
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Lacquer', sans-serif; color: blueviolet;
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 300; /* Eller ändra beroende på rubriknivå */
+}
+
+#training {
+    text-align: center; /* Centrera innehållet horisontellt */
+    padding: 20px; /* Lägger till extra padding runt hela #training-området */
+}
+
+#training ul {
+    list-style-type: circle; /* Använd cirkelpunkter */
+    padding: 0; /* Ta bort all standard-padding från ul */
+    margin: 0 auto; /* Centrerar listan horisontellt */
+    display: inline-block; /* Gör att listan kan centreras med text-align på #training */
+    text-align: left; /* Justerar listobjekten till vänster inom listan */
+    background-color: #78058325; /* Ljus bakgrundsfärg för kontrast */
+    border-radius: 8px; /* Rundade hörn för listans bakgrund */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Lätt skugga för ett svävande intryck */
+    padding: 20px; /* Inre padding inom listområdet */
+}
+
+#training li {
+    font-family: Arial, sans-serif; /* Fontstil för listobjekten */
+    padding: 10px 0; /* Lägger till mellanrum mellan varje listobjekt */
+    font-size: 1rem; /* Standardstorlek för texten */
+    color: #333; /* En mörkare grå färg för texten */
+}
+.form-container {
+    display: flex;
+    justify-content: center; /* Centrera horisontellt */
+    align-items: center; /* Centrera vertikalt (om det finns höjd på containern) */
+    height: 100vh; /* Full höjd på sidan för att centrera vertikalt */
+}
+
+form {
+    width: 300px; /* Bestäm en bredd för formuläret */
+}
+
+@media (max-width: 768px) {
+    .image-container img {
+        max-width: 300px; /* Mindre maxbredd på surfplattor */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container img {
+        max-width: 100%; /* Full bredd på små skärmar */
+        padding: 0; /* Ta bort padding på mindre skärmar om det behövs */
+    }
+}
+
+
+/* Lägger till en smiley-ikon före text i alla <h2>-element */
+h2::after {
+    content: "\f118"; /* Kod för Font Awesome-smiley */
+    font-family: "Font Awesome 6 Free"; /* Se till att rätt font används */
+    font-weight: 900; /* Krävs för vissa ikoner */
+    font-size: 1.5rem;
+    color: rgb(245, 117, 12);
+    margin-right: 5px;
+}
+
+h1::after {
+    content: "\f118"; /* Kod för Font Awesome-smiley */
+    font-family: "Font Awesome 6 Free"; /* Se till att rätt font används */
+    font-weight: 900; /* Krävs för vissa ikoner */
+    font-size: 1.5rem;
+    color: gold;
+    margin-right: 5px;
+}
+
+h3::after {
+    content: "\f118"; /* Kod för Font Awesome-smiley */
+    font-family: "Font Awesome 6 Free"; /* Se till att rätt font används */
+    font-weight: 900; /* Krävs för vissa ikoner */
+    font-size: 1.5rem;
+    color: rgb(246, 2, 2);
+    margin-right: 5px;
+}
